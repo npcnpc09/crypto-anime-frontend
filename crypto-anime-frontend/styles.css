@@ -1,0 +1,185 @@
+/* styles.css */
+
+/* 全局样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 确保视频充满整个屏幕 */
+  z-index: -1; /* 确保视频在内容后面 */
+}
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff9de3, #a9c8ff);
+    animation: gradientAnimation 6s infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    from {
+      filter: brightness(1);
+    }
+    to {
+      filter: brightness(1.2);
+    }
+  }
+  
+
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-top: 20vh;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .news-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .news-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+  }
+  
+  .news-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .news-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .news-card a {
+    font-size: 1rem;
+    color: #ff9de3;
+    text-decoration: none;
+  }
+  
+  .news-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .anime-character {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    opacity: 0.9;
+    animation: float 3s ease-in-out infinite;
+  }
+  /* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-link {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff9de3;
+  }
+  
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Loader 样式 */
+.loader {
+    font-size: 1.2rem;
+    color: gray;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* 搜索框样式 */
+  #search-bar {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* 新闻卡片样式 */
+  .news-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-card h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+  }
+  
+  .news-card p {
+    margin: 0 0 10px;
+  }
+  
+  .news-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .news-card a:hover {
+    text-decoration: underline;
+  }
+  
+  
